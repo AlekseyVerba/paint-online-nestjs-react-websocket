@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.settingbar {
+    display: flex;
+    height: $height-bar;
+    // justify-content: space-between;
+    border-bottom: 2px solid rgb(179, 177, 177);
+    width: 100%;
+    align-items: center;
+    padding: $padding-bar;
+    // margin-top: 20px;
+}
+
+.settingbar__input {
+    margin-left: 10px;
+    width: 50px;
+}
+.settingbar__block {
+    width: 200px;
+    display: flex;
+}
+.settingbar__users {
+    display: flex;
+    margin-left: auto;
+}
+.settingbar__left-half {
+    display: flex;
+}

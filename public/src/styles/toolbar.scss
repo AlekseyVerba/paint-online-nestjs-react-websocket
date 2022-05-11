@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.toolbar {
+    display: flex;
+    height: $height-bar;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(179, 177, 177);
+    width: 100%;
+    align-items: center;
+    padding: $padding-bar;
+    
+}  
+
+.toolbar__button {
+    & + & {
+        margin-left: 20px;
+    }
+    cursor: pointer;
+    outline: none;
+    background-size: cover;
+    border: none;
+    &--brush {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/brush.png) no-repeat;
+    }
+    &--squad {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/rect.png) no-repeat;
+    }
+    &--circle {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/circle.png) no-repeat;
+    }
+    &--eraser {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/eraser.png) no-repeat;
+    }
+
+    &--line {
+        height: 20px;
+        width: 27px;
+        background: url(../assets/img/line.png) no-repeat;
+    }
+
+    &--left {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/left.png) no-repeat;
+    }
+
+    &--right {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/right.png) no-repeat;
+    }
+    &--save {
+        height: 27px;
+        width: 27px;
+        background: url(../assets/img/save.png) no-repeat;
+    }
+}
